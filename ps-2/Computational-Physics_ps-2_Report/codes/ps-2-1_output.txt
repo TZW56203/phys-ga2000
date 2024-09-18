@@ -1,0 +1,13 @@
+NumPy's 32-bit floating point representation of 100.98763 is
+100.98763 decimal ->
+        bitlist = [0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1]
+        sign = 0 
+        exponent = [1, 0, 0, 0, 0, 1, 0, 1] 
+        mantissa = [1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1]
+        
+This 32-bit representation in fact corresponds to
+100.98763275146484
+We can check that: 13236651/131072 =  100.98763275146484 
+
+The difference is
+2.7514648479609605e-06
