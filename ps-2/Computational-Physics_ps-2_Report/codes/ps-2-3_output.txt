@@ -1,0 +1,13 @@
+The Madelung constant computed using for loop is
+-1.7365049
+The Madelung constant computed without using for loop is
+-1.736073
+
+
+The time using for loop is
+5.275421608006582 second
+The time without using for loop is
+0.017490418045781553 second
+
+
+The function without using for loop is faster

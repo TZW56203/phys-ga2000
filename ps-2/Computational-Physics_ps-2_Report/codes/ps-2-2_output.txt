@@ -1,0 +1,25 @@
+In np.float32 precision, the smallest number you can add to 1 and get an answer that is different than 1 is approximately
+2^-23 or anything larger than 2^-24 
+
+For example
+1 + 2^-23 = 1.0000001
+1 + 1.01 * 2^-24 = 1.0000001
+1 + 2^-24 = 1.0 
+
+In np.float64 precision, the smallest number you can add to 1 and get an answer that is different than 1 is approximately
+2^-52 or anything larger than 2^-53 
+
+For example
+1 + 2^-52 = 1.0000000000000002
+1 + 1.01 * 2^-53 = 1.0000000000000002
+1 + 2^-53 = 1.0 
+
+In np.float32, the minimum (positive) number is approximately
+1e-45
+In np.float32, the maximum (positive) number is approximately
+3.4028235e+38 
+
+In np.float64, the minimum (positive) number is approximately
+5e-324
+In np.float64, the maximum (positive) number is approximately
+1.7976931348623157e+308 
