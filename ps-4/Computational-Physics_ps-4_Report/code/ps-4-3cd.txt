@@ -1,0 +1,5 @@
+Analytical: 2.345207879911715
+Gauss-Legendre quadrature (N=100): 2.3452078737858195
+Gauss-Legendre difference (N=100): -6.12589534654262e-09
+Gauss-Hermite quadrature (N=7): 2.345207879911715
+Gauss-Hermite difference (N=7): 0.0
