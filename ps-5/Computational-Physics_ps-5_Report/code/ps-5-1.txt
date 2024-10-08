@@ -1,0 +1,7 @@
+analytical: f'(0) = 1.0
+central difference (h=0.01): f'(0) = 0.99996924
+jax: f'(0) = 1.0
+
+analytical: f'(2) = 0.0013409506
+central difference (h=0.01): f'(2) = 0.001335144
+jax: f'(2) = 0.0013411314
