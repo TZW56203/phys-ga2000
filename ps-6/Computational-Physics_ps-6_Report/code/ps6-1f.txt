@@ -1,0 +1,2 @@
+condition number of cov: 33166539000.0
+condition number of flux_res: 6561841.5
