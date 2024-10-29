@@ -1,0 +1,14 @@
+Moon Earth
+iteration: 8
+dist to the smaller mass: 58173.37021396068 km
+dist to the larger mass: 326826.6297860393 km 
+
+Earth Sun
+iteration: 18
+dist to the smaller mass: 1491392.0145535602 km
+dist to the larger mass: 148106630.98544645 km 
+
+Jupiter at Earth dist Sun
+iteration: 11
+dist to the smaller mass: 9974410.89615033 km
+dist to the larger mass: 139623612.10384968 km 
