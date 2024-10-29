@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[svgnames]{xcolor}
+\usepackage{amsmath} % For the equation* environment
+\usepackage{amssymb}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=cyan,      
+    urlcolor=orange,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\setlength{\textwidth}{6.5in}
+\setlength{\headheight}{0in}
+\setlength{\textheight}{8.0in}
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\lstdefinestyle{txtstyle}{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    backgroundcolor=\color{Bisque}
+}
+\lstset{style = txtstyle}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                                   
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\title{Computational Physics ps-7 Report}
+  
+\author{Tongzhou Wang, \\ GitHub account: TZW56203, repository: phys-ga2000. \\ \url{https://github.com/TZW56203/phys-ga2000}}
+
+\date{October 27, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 1}
+
+\subsection{Part (a)}
+By the Newton's second law we have
+\begin{equation}
+    \frac{GMm_s}{r^2} - \frac{Gmm_s}{(R-r)^2} = m_s \omega^2 r.
+\end{equation}
+Simplifying, we get the required expression
+\begin{equation}\label{1a}
+    \frac{GM}{r^2} - \frac{Gm}{(R-r)^2} = \omega^2 r.
+\end{equation}
+
+Since the satellite have the same angular velocity as the moon, we also have
+\begin{equation}
+    \frac{GMm}{R^2} = m \omega^2 R,
+\end{equation}
+which gives
+\begin{equation}
+    \omega^2 = \frac{GM}{R^3}.
+\end{equation}
+
+Plugging this in to (\ref{1a}), we get
+\begin{equation}
+    \frac{GM}{r^2} - \frac{Gm}{(R-r)^2} = \frac{GMr}{R^3}.
+\end{equation}
+Simplifying and taking $m^{\prime} = m/M$ and $r^{\prime} = r/R$, we get
+\begin{equation}
+    1 - r^{\prime 3} - m^{\prime} \left( \frac{r^{\prime}}{1 - r^{\prime}} \right) ^2 = 0.
+\end{equation}
+
+\subsection{Part (b)}
+Listing \ref{lst:Lagrange} shows the Lagrange points in the following cases.
+\lstinputlisting[caption={Lagrange points.}, label={lst:Lagrange}]{code/ps-7-1.txt}
+
+\section{Problem 2}
+Listing \ref{lst:min} shows the computed point at which the function $y = (x-0.3)^2 \exp(x)$ takes minimum. The self-written Brent's method gives a result close to that of \texttt{scipy.optimize.brent} and the true value 0.3.
+\lstinputlisting[caption={Minimization.}, label={lst:min}]{code/ps-7-2.txt}
+
+\end{document}
