@@ -1,0 +1,5 @@
+piano frequencies where the coefficients > 7e7:
+[523.908 524.79  525.231]
+trumpet frequencies where the coefficients > 5e7:
+[ 521.703 1042.524 1043.847 1562.904 1563.345 1563.786 1564.227 1565.109
+ 1565.55  1565.991 2087.694]
